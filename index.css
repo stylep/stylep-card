@@ -1,0 +1,44 @@
+%card-block {
+  margin: 0 0 1em;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+%card-inline {
+  @extend %card-block;
+  display: inline-block;
+  max-width: 100%;
+  min-height: 100px;
+  min-width: 100px;
+}
+
+@define-mixin card-solid
+  $color-passive: #f7f7f7,
+  $color-text: #444,
+  $radius-size: 0,
+  $shadow: 0 2px 2px rgba(0, 0, 0, .4) 
+{
+  background-color: $color-passive;
+  border-radius: $radius-size;
+  box-shadow: $shadow;
+  color: $color-text;
+  @mixin-content;
+}
+
+@define-mixin card-hollow
+  $color-passive: #444,
+  $color-text: #444,
+  $color-background: transparent,
+  $radius-size: 0,
+  $border-width: 1px,
+  $shadow: none
+{
+  background-color: $color-background;
+  border: $border-width solid $color-passive;
+  border-radius: $radius-size;
+  box-shadow: $shadow;
+  color: $color-text;
+  @mixin-content;
+}
+
