@@ -1,5 +1,7 @@
 # stylep-card
 
+<img src=giticon.png title=stylep-card align=right height=95>
+
 A simple card pattern for your next project.
 
 ## Install
