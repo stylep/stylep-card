@@ -1,4 +1,5 @@
 <!doctype html>
+<html>
 <head>
         <link rel="stylesheet" href="build/index.css">
         <title>stylep-card/example</title>
@@ -7,10 +8,30 @@
 <body>
         <h1>stylep-card/example</h1>
 
-        <div class="card-block"></div>
-        <div class="card-block card--solid"></div>
-        <div class="card-block card--hollow"></div>
+        <h2>Patterns</h2>
 
+        <h3>Inline Card</h3>
+        <section>
+        <div class="card-inline">.card-block</div>
+        </section>
+
+        <h3>Block Card</h3>
+        <section>
+        <div class="card-block">.card-block</div>
+        </section>
+
+
+        <h2>Styles</h2>
+
+        <h3>Solid Card</h3>
+        <section>
+        <div class="card-inline card--solid"></div>
+        <div class="card-inline card--solid">
+                <div class="card__full">
+                        <span style="font-size: 24px;">Card Title</span>
+                </div>
+                <div class="card__full">Lorem ipsum dolor sit amet.</div>
+        </div>
         <div class="card-block card--solid">
                 <div class="card__full">
                         <span style="font-size: 24px;">Card Title</span>
@@ -18,34 +39,7 @@
                 <div class="card__full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae commodo mi. Praesent enim enim, ultricies a ligula ac, scelerisque posuere turpis. In eu euismod eros. Aliquam interdum ipsum sed ex eleifend, nec ultricies eros sollicitudin. Aenean vulputate nisi quis turpis ultricies, sit amet fringilla augue hendrerit. Aliquam malesuada purus ut magna congue malesuada. Aenean pulvinar erat libero, at maximus libero egestas vitae.</div>
         </div>
 
-        <div class="card-block card--hollow">
-                <div class="card__full">
-                        <span style="font-size: 24px;">Card Title</span>
-                </div>
-                <div class="card__full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae commodo mi. Praesent enim enim, ultricies a ligula ac, scelerisque posuere turpis. In eu euismod eros. Aliquam interdum ipsum sed ex eleifend, nec ultricies eros sollicitudin. Aenean vulputate nisi quis turpis ultricies, sit amet fringilla augue hendrerit. Aliquam malesuada purus ut magna congue malesuada. Aenean pulvinar erat libero, at maximus libero egestas vitae.</div>
-        </div>
-
-        <div class="card-inline"></div>
-        <div class="card-inline card--solid"></div>
-        <div class="card-inline card--hollow"></div>
-
-        <div class="card-inline card--solid">
-                <div class="card__full">
-                        <span style="font-size: 24px;">Card Title</span>
-                </div>
-                <div class="card__full">Lorem ipsum dolor sit amet.</div>
-        </div>
-
-        <div class="card-inline card--hollow">
-                <div class="card__full">
-                        <span style="font-size: 24px;">Card Title</span>
-                </div>
-                <div class="card__full">Lorem ipsum dolor sit amet.</div>
-        </div>
-
-
-        <div class="card-solid--fancy"></div>
-
+        <h4>Customized</h4>
         <div class="card-solid--fancy">
                 <div class="card__full">
                         <span style="font-size: 24px;">Card Title</span>
@@ -57,8 +51,25 @@
                 <div class="card__full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae commodo mi. Praesent enim enim, ultricies a ligula ac, scelerisque posuere turpis. In eu euismod eros. Aliquam interdum ipsum sed ex eleifend, nec ultricies eros sollicitudin. Aenean vulputate nisi quis turpis ultricies, sit amet fringilla augue hendrerit. Aliquam malesuada purus ut magna congue malesuada. Aenean pulvinar erat libero, at maximus libero egestas vitae.</div>
         </div>
 
-        <div class="card-hollow--fancy"></div>
+        </section>
 
+        <h3>Hollow Card</h3>
+        <section>
+        <div class="card-inline card--hollow"></div>
+        <div class="card-inline card--hollow">
+                <div class="card__full">
+                        <span style="font-size: 24px;">Card Title</span>
+                </div>
+                <div class="card__full">Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="card-block card--hollow">
+                <div class="card__full">
+                        <span style="font-size: 24px;">Card Title</span>
+                </div>
+                <div class="card__full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae commodo mi. Praesent enim enim, ultricies a ligula ac, scelerisque posuere turpis. In eu euismod eros. Aliquam interdum ipsum sed ex eleifend, nec ultricies eros sollicitudin. Aenean vulputate nisi quis turpis ultricies, sit amet fringilla augue hendrerit. Aliquam malesuada purus ut magna congue malesuada. Aenean pulvinar erat libero, at maximus libero egestas vitae.</div>
+        </div>
+
+        <h4>Customized</h4>
         <div class="card-hollow--fancy">
                 <div class="card__full">
                         <span style="font-size: 24px;">Card Title</span>
@@ -69,5 +80,6 @@
                 </div>
                 <div class="card__full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae commodo mi. Praesent enim enim, ultricies a ligula ac, scelerisque posuere turpis. In eu euismod eros. Aliquam interdum ipsum sed ex eleifend, nec ultricies eros sollicitudin. Aenean vulputate nisi quis turpis ultricies, sit amet fringilla augue hendrerit. Aliquam malesuada purus ut magna congue malesuada. Aenean pulvinar erat libero, at maximus libero egestas vitae.</div>
         </div>
+        </section>
 </body>
-
+</html>

@@ -1,6 +1,18 @@
 /* @import stylep-card; */
 @import '../index.css';
 
+body {
+  background-color: #e8ebef;
+  font-family: 'Helvetica Neue';
+  overflow-x: hidden;
+}
+
+section {
+  background-color: #fff;
+  padding: 1em 1em .125em;
+  margin-bottom: 1em;
+}
+
 .card-block {
   @extend %card-block;
 }
