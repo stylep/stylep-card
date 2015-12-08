@@ -44,6 +44,7 @@ Paints your card as a solid object with colors, shadow and radius.
 * `$color-passive: #f7f7f7` Background color of the card
 * `$color-text: #444` Color of text inside the card
 * `$radius-size: 0` Border radius of the card
+* `$border: none` Adds a border to the card
 * `$shadow: 0 2px 2px rgba(0, 0, 0, .4)` Shadow around the card
 
 ### card-hollow
