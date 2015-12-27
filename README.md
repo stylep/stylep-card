@@ -68,3 +68,5 @@ Paints your card as a bordered object with colors and radius.
 @mixin card-solid #efefef, #000, 2px, 0 0 0 3px #000;
 ```
 
+## License
+This project is licensed under the MIT [license](LICENSE).
