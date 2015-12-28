@@ -30,14 +30,14 @@ spm install card
 ## Patterns
 Placeholder selectors that contain common styles for structure.
 
-### `card-inline;`
+#### `card-inline`
 This draws a card that displays inline on the page.
 
 ##### Options
 
 * `$card-margin: 0 0 1em` Space around the card
 
-### `card-block;`
+#### `card-block`
 This draws a card that expands the width of the containing element.
 
 ##### Options
@@ -47,7 +47,7 @@ This draws a card that expands the width of the containing element.
 
 ## Styles
 
-### card-solid
+#### `card-solid`
 Paints your card as a solid object with colors, shadow and radius.
 
 ##### Options
@@ -56,7 +56,7 @@ Paints your card as a solid object with colors, shadow and radius.
 * `$card-text-color: #444` Color of text inside the card
 * `$card-shadow: 0 2px 2px rgba(0, 0, 0, .4)` Shadow around the card
 
-### card-hollow
+#### `card-hollow`
 Paints your card as a bordered object with colors and radius.
 
 ##### Options
