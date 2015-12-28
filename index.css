@@ -1,15 +1,18 @@
-%card-block {
-  margin: 0 0 1em;
+@define-mixin card-block
+  $card-margin: 0 0 1em {
+  margin: $card-margin;
   overflow: hidden;
   position: relative;
   z-index: 1;
 }
 
-%card-inline {
-  @extend %card-block;
+@define-mixin card-inline
+  $card-margin: 0 0 1em,
+  $card-min-width: 100px {
+  @mixin card-block $card-margin;
   display: inline-block;
   max-width: 100%;
-  min-width: 100px;
+  min-width: $card-min-width;
 }
 
 @define-mixin card-solid
