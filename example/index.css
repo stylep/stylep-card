@@ -20,8 +20,8 @@ h3 { font-weight: 300; }
 
 .card-block { @extend %card-block; }
 .card-inline { @extend %card-inline; }
-.card--solid { @extend %card-solid; }
-.card--hollow { @extend %card-hollow; }
+.card--solid { @mixin card-solid; }
+.card--hollow { @mixin card-hollow; }
 
 .card {
   &__full { padding: 1em; }
@@ -34,20 +34,11 @@ h3 { font-weight: 300; }
 
 .card-solid--fancy {
   @extend %card-block;
-  @extend %card-solid;
-  --card-color: #444;
-  --card-text-color: #fff;
-  --card-radius: 2px;
-  --card-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+  @mixin card-solid #444, #fff, 0 1px 4px #999;
 }
 
 .card-hollow--fancy {
   @extend %card-block;
-  @extend %card-hollow;
-  --card-color: #888;
-  --card-text-color: #222;
-  --card-border-width: 4px;
-  --card-radius: 3px;
-  --card-shadow: 0 3px 5px rgba(0, 0, 0, .4);
+  @mixin card-hollow #888, 4px, dashed;
 }
 
