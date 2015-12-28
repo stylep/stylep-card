@@ -20,7 +20,7 @@ spm install card
 .card {
 
   /* Card Design Pattern */
-  @extend %card-block;
+  @mixin card-block;
 
   /* Customize your card */
   @mixin card-solid #efefef, #444, 0 0 0 3px #000;
