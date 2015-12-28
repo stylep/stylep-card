@@ -1,29 +1,33 @@
 %card-block {
-  margin: var(--card-margin, 0 0 1em);
-  overflow: var(--card-overflow, hidden);
-  position: var(--card-position, relative);
-  z-index: var(--card-z-index, 1);
+  margin: 0 0 1em;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 %card-inline {
-
   @extend %card-block;
-  display: var(--card-display, inline-block);
-  max-width: var(--card-max-width, 100%);
-  min-width: var(--card-min-width, 100px);
+  display: inline-block;
+  max-width: 100%;
+  min-width: 100px;
 }
 
-%card-solid {
-  background-color: var(--card-color, #f7f7f7);
-  box-shadow: var(--card-shadow, 0 2px 2px rgba(0, 0, 0, 0.4));
-  color: var(--card-text-color, #444);
+@define-mixin card-solid
+  $card-color: #f7f7f7,
+  $card-text-color: #444,
+  $card-shadow: 0 2px 2px rgba(0, 0, 0, .4) {
+  background-color: $card-color;
+  box-shadow: $card-shadow;
+  color: $card-text-color;
 }
 
-%card-hollow {
-  --card-color: #444;
-  border-color: var(--card-border, --card-color);
-  border-style: var(--card-border-style, solid);
-  border-width: var(--card-border-width, 1px);
-  color: var(--card-text-color, --card-color);
+@define-mixin card-hollow
+  $card-color: #444,
+  $card-border-width: 1px,
+  $card-border-style: solid {
+  border-color: $card-color;
+  border-style: $card-border-style;
+  border-width: $card-border-width;
+  color: $card-color;
 }
 
