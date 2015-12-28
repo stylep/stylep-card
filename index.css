@@ -9,10 +9,13 @@
 @define-mixin card-inline
   $card-margin: 0 0 1em,
   $card-min-width: 100px {
-  @mixin card-block $card-margin;
   display: inline-block;
+  margin: $card-margin;
   max-width: 100%;
   min-width: $card-min-width;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 @define-mixin card-solid
