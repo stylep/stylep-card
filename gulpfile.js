@@ -5,7 +5,6 @@ var postcss = require('gulp-postcss');
 var cssimport = require('postcss-import');
 var mixins = require('postcss-mixins');
 var nested = require('postcss-nested');
-var extend = require('postcss-extend');
 var stylelint = require('stylelint');
 var reporter = require('postcss-reporter');
 
@@ -24,7 +23,6 @@ gulp.task('css:lint', function() {
 gulp.task('css', ['css:lint'], function() {
         var processors = [
                 cssimport,
-                extend,
                 nested,
                 mixins,
                 autoprefixer(['last 2 versions'])
