@@ -18,8 +18,8 @@ h1 { font-weight: 100; letter-spacing: 1px; }
 h2 { font-weight: 200; }
 h3 { font-weight: 300; }
 
-.card-block { @extend %card-block; }
-.card-inline { @extend %card-inline; }
+.card-block { @mixin card-block; }
+.card-inline { @mixin card-inline; }
 .card--solid { @mixin card-solid; }
 .card--hollow { @mixin card-hollow; }
 
@@ -33,12 +33,12 @@ h3 { font-weight: 300; }
 }
 
 .card-solid--fancy {
-  @extend %card-block;
+  @mixin card-block;
   @mixin card-solid #444, #fff, 0 1px 4px #999;
 }
 
 .card-hollow--fancy {
-  @extend %card-block;
+  @mixin card-block;
   @mixin card-hollow #888, 4px, dashed;
 }
 
