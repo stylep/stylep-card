@@ -12,7 +12,6 @@
     "gulp": "^3.9.0",
     "gulp-postcss": "^6.0.0",
     "gulp-util": "^3.0.0",
-    "postcss-extend": "^1.0.0",
     "postcss-import": "^7.1.0",
     "postcss-mixins": "^3.0.0",
     "postcss-nested": "^1.0.0",
