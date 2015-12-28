@@ -18,21 +18,10 @@ h1 { font-weight: 100; letter-spacing: 1px; }
 h2 { font-weight: 200; }
 h3 { font-weight: 300; }
 
-.card-block {
-  @extend %card-block;
-}
-
-.card-inline {
-  @extend %card-inline;
-}
-
-.card--solid {
-  @mixin card-solid;
-}
-
-.card--hollow {
-  @mixin card-hollow;
-}
+.card-block { @extend %card-block; }
+.card-inline { @extend %card-inline; }
+.card--solid { @extend %card-solid; }
+.card--hollow { @extend %card-hollow; }
 
 .card {
   &__full { padding: 1em; }
@@ -45,10 +34,20 @@ h3 { font-weight: 300; }
 
 .card-solid--fancy {
   @extend %card-block;
-  @mixin card-solid #444, #fff, 2px, 0 2px 2px rgba(0, 0, 0, .4);
+  @extend %card-solid;
+  --card-color: #444;
+  --card-text-color: #fff;
+  --card-radius: 2px;
+  --card-shadow: 0 2px 2px rgba(0, 0, 0, .4);
 }
 
 .card-hollow--fancy {
   @extend %card-block;
-  @mixin card-hollow #888, #222, rgba(0, 0, 0, .08), 4px, 3px, 0 3px 5px rgba(0, 0, 0, .4);
+  @extend %card-hollow;
+  --card-color: #888;
+  --card-text-color: #222;
+  --card-border-width: 4px;
+  --card-radius: 3px;
+  --card-shadow: 0 3px 5px rgba(0, 0, 0, .4);
 }
+
